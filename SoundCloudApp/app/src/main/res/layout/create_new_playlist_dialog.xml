@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <TextView 
+        android:id="@+id/textview_add_new_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new playlist"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+       />
+    <EditText 
+        android:id="@+id/edittext_new_playlist_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textview_add_new_playlist"
+        android:layout_marginBottom="5dp"
+        android:inputType="text"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_new_playlist_name"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/cancel_playlist"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Cancel"
+            ></Button>
+        <Button
+            android:id="@+id/save_playlist"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Save"
+            ></Button>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#88000000" >
+
+        <TextView
+            android:id="@+id/textView_total_stations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Total Stations"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView_total_stations_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView_total_stations"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/total_tracks"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/searchbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/upper_layout"
+        android:background="#88000000" >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_toLeftOf="@+id/imageView_close_icon"
+            android:background="#77000000"
+            android:hint="Search a country"
+            android:inputType="textAutoComplete"
+            android:lines="1"
+            android:maxLines="1" >
+        </AutoCompleteTextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchbar_layout"
+        android:layout_marginTop="5dp"
+        android:background="#88000000" >
+
+        <alburraq.gocloud.utils.IndexableListView
+            android:id="@+id/radio_countries_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/autoCompleteTextView"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none" >
+        </alburraq.gocloud.utils.IndexableListView>
+    </RelativeLayout>
+
+</RelativeLayout>

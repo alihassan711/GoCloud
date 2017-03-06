@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#BB000000" >
+
+    <LinearLayout
+        android:id="@+id/option_button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="1" >
+
+        <ImageButton
+            android:id="@+id/imagebutton_compose_playlist"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:src="@drawable/menu_queue" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imagebutton_ringtone"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:src="@drawable/menu_ring" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imagebutton_edit"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:src="@drawable/menu_tags" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imagebutton_delete"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:src="@drawable/menu_delete" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imagebutton_share"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:src="@drawable/menu_share" >
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/option_button_layout_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/option_button_layout"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/options_add_to_playlist_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:text="Add"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/options_set_ringtone_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:text="Set as tone"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/options_edit_info_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:text="Edit Info"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/options_delete_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:text="Delete"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/options_share_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:text="Share"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

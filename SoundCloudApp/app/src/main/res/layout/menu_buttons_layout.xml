@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+  >
+		
+		<RelativeLayout
+	    android:id="@+id/lower_layout"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	   
+	    >
+		<LinearLayout
+		    android:id="@+id/buttons_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:weightSum="1"
+		    >
+		      <ImageButton
+		    android:id="@+id/imageButton_menu_shuffle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:contentDescription="@string/imagebutton"
+		    android:background="@android:color/transparent"
+		    android:layout_weight="0.20"
+		    android:src="@drawable/composer_button_shuffle"
+		   />
+		    <ImageButton
+		    android:id="@+id/imageButton_menu_track"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:contentDescription="@string/imagebutton"
+		    android:background="@android:color/transparent"
+		    android:layout_weight="0.20"
+		   
+		   />
+		    <ImageButton
+		    android:id="@+id/imageButton_menu_album"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:contentDescription="@string/imagebutton"
+		    android:background="@android:color/transparent"
+		    android:layout_weight="0.20"
+		   />
+		   <ImageButton
+		    android:id="@+id/imageButton_menu_artist"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:contentDescription="@string/imagebutton"
+		    android:background="@android:color/transparent"
+		    android:layout_weight="0.20"
+		    
+		   />
+		 
+		    <ImageButton
+		    android:id="@+id/imageButton_menu_search"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:contentDescription="@string/imagebutton"
+		    android:background="@android:color/transparent"
+		    android:layout_weight="0.20"
+		    android:src="@drawable/composer_icn_search"
+		   />
+		    </LinearLayout>
+		</RelativeLayout>
+
+</LinearLayout>

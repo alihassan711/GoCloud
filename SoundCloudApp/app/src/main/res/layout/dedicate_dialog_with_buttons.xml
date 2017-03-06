@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/smiley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sad" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/no_dedicationTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smiley"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:text="@string/dedicationAlertOne_desc"
+        android:textColor="#ffffff" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/no_dedicationOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_dedicationTwo"
+        android:layout_centerHorizontal="true"
+        android:maxLines="1"
+        android:text="@string/dedicationAlertTwo_desc"
+        android:textColor="#ffffff" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/texts_buttons_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_dedicationTwo"
+        android:layout_marginTop="30dp"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:text="Cancel" >
+        </Button>
+
+        <Button
+            android:id="@+id/continue_"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:text="Log In" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

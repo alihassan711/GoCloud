@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoCloud</string>
+    <string name="imageview">Image</string>
+    <string name="imagebutton">Image Button</string>
+    <string name="hint">Search a song</string>
+    <string name="total_tracks">Total Tracks</string>
+    <string name="search_hint">Search a song..</string>
+    <string name="loading">Loading...</string>
+    <string name="total_recipes">Total Recipes</string>
+    <string name="app_id">372317892965013</string>
+    <string name="server_registering">Server Registering</string>
+    <string name="server_registered">Server Registered</string>
+    <string name="server_register_error">Can not register to the server</string>
+    <string name="server_unregistered">Server Unregistered</string>
+    <string name="server_unregistered_error">Can not unregister from the server</string>
+    <string name="gcm_unregistered">Unregistered from GCM</string>
+    <string name="gcm_deleted">Deleted from GCM</string>
+    <string name="gcm_error">GCM error</string>
+    <string name="gcm_recoverable_error">Recoverable GCM error</string>
+   	<string name="dedicationAlertOne_desc">We are Sorry, you don\'\ t have any dedications</string>
+    <string name="dedicationAlertTwo_desc">yet. Dedicate friends to get noticed.</string> <string name="copyRight">\u00A9 \ Al-Burraq Technologies 2015</string>
+    <string name="siteAddress">http://www.al-burraq.com</string>
+    <string name="appVersion">Version 1.0</string>
+    
+
+</resources>

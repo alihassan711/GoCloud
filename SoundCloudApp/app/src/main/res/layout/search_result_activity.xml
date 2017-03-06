@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/inner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#88000000" >
+
+        <TextView
+            android:id="@+id/search_textView_total_tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/total_tracks"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/serach_textView_total_tracks_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/search_textView_total_tracks"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/total_tracks"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/serach_track_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/search_textView_total_tracks"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_searchbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inner_layout"
+        android:layout_marginTop="5dp"
+        android:animateLayoutChanges="true"
+        android:background="#88000000"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <AutoCompleteTextView
+            android:id="@+id/search_autoCompleteTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/search_imageView_close_icon"
+            android:background="#77000000"
+            android:hint="@string/hint"
+            android:inputType="textAutoComplete"
+            android:lines="1"
+            android:maxLines="1" >
+        </AutoCompleteTextView>
+
+        <ImageButton
+            android:id="@+id/search_imageView_close_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/search_imageView_search_icon"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:rotation="45"
+            android:src="@drawable/close" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/search_imageView_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:src="@drawable/composer_icn_search" >
+        </ImageButton>
+
+        <ProgressBar
+            android:id="@+id/search_loading_progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/search_imageView_close_icon"
+            android:paddingRight="12dp"
+            android:paddingTop="1dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_listView_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_searchbar_layout"
+        android:layout_marginTop="5dp"
+        android:background="#88000000" >
+
+        <alburraq.gocloud.utils.IndexableListView
+            android:id="@+id/search_tracks_from_sd_card"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none" >
+        </alburraq.gocloud.utils.IndexableListView>
+    </RelativeLayout>
+
+</RelativeLayout>

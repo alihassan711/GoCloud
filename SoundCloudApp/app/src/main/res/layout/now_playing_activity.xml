@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#88000000">
+     <alburraq.gocloud.utils.IndexableListView
+		    android:id="@+id/now_playing_activity_listview"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:layout_alignParentTop="true"
+		    android:scrollbars="none"
+		    android:divider="@android:color/transparent"
+		   	android:background="@android:color/transparent"
+		   	android:layout_above="@+id/appbrain_banner"
+		    ></alburraq.gocloud.utils.IndexableListView>
+     
+    <com.appbrain.AppBrainBanner
+        android:id="@+id/appbrain_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000" >
+
+        <alburraq.gocloud.utils.IndexableListView
+            android:id="@+id/radio_countries_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/small_radio_bar"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none" >
+        </alburraq.gocloud.utils.IndexableListView>
+
+        <RelativeLayout
+            android:id="@+id/small_radio_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/appbrain_banner"
+            android:background="#DD000000" >
+
+            <TextView
+                android:id="@+id/radio_title_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff" />
+
+            <ImageButton
+                android:id="@+id/radio_pause_play_imageButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/play2" />
+        </RelativeLayout>
+
+        <com.appbrain.AppBrainBanner
+            android:id="@+id/appbrain_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+        </com.appbrain.AppBrainBanner>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ImageView
+        android:id="@+id/dedicationPerson_imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/dedicationPersonName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/dedicationPerson_imageView"
+        android:layout_toLeftOf="@+id/dedicates_textView"
+        android:text="Zeerak sjkadfkjlsahdflkjsad kjlsdahfkjsadfkjjjkladsjfl Hameem"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dedicates_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/dedicationPersonName_textView"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:maxLines="1"
+        android:text="dedicated"
+        android:textColor="#ffffff"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/dedicationTrackTitle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dedicationPersonName_textView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/dedicationPerson_imageView"
+        android:layout_toLeftOf="@+id/to_you_textView"
+        android:maxLines="1"
+        android:text="Smack lkjdslkfjlksdajflk'j sadl;kfj;lksajdkl;f/ that"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/to_you_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dedicationPersonName_textView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/dedicationTime_textView"
+        android:text="to you at"
+        android:textColor="#ffffff"
+        android:textStyle="italic" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/dedicationTime_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dedicationPersonName_textView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:text="18:04"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="bold" >
+    </TextView>
+
+</RelativeLayout>

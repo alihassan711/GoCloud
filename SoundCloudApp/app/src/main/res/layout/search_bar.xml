@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:paddingTop="8dp" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imageView_close_icon"
+            android:background="#77000000"
+            android:hint="@string/hint"
+            android:inputType="textAutoComplete"
+            android:lines="1"
+            android:maxLines="1" >
+        </AutoCompleteTextView>
+
+        <ImageButton
+            android:id="@+id/imageView_close_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/imageView_search_icon"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:rotation="45"
+            android:src="@drawable/close" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageView_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/imagebutton"
+            android:src="@drawable/composer_icn_search" >
+        </ImageButton>
+
+        <ProgressBar
+            android:id="@+id/loading_progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingRight="12dp"
+            android:paddingTop="1dp"
+            android:layout_toLeftOf="@+id/imageView_close_icon"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

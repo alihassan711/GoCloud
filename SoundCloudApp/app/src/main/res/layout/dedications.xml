@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/dedications_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/appbrain_banner"
+        android:layout_alignParentTop="true"
+        android:background="#AA000000"
+        android:divider="@android:color/black"
+        android:dividerHeight="0dip"
+        android:scrollbars="none" >
+    </ListView>
+
+    <com.appbrain.AppBrainBanner
+        android:id="@+id/appbrain_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
